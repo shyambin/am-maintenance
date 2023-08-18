@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Thunder";
+  src: url("/assets/font/Thunder-SemiBoldLC.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.marquee {
+  width: 100%;
+  padding-top: 4em;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee span {
+  font-family: "Thunder";
+  font-weight: 700;
+  color: #ffed24;
+  font-size: 28em;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-left: -10%;
+  animation: marquee-animation 380s linear infinite;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+section img {
+  width: 12%;
+  object-fit: cover;
+}
+
+.img-1 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.img-2 {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar {
+  width: 85%;
+  margin: 0 auto;
+  color: #f3f7a8;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 60px;
+}
+
+.header {
+  width: 85%;
+  margin: 0 auto;
+  padding: 10em 2em 0 2em;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.logo img {
+  width: 140px;
+}
+
+.menu-btn {
+  line-height: 10px;
+}
