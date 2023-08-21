@@ -1,0 +1,6 @@
+:80 {
+  rewrite /* /
+  file_server {
+    root .
+  }
+}
